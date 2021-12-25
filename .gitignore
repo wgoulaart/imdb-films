@@ -43,3 +43,6 @@ storybook-static
 
 # typescript
 *.tsbuildinfo
+
+#jest
+*.snap
