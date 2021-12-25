@@ -3,7 +3,7 @@ type ListFilmProps = {
 }
 
 function ListFilm({ title }: ListFilmProps) {
-  return <h1>{title}</h1>
+  return <section aria-label="ListFilm">{title}</section>
 }
 
 export default ListFilm

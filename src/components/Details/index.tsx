@@ -3,7 +3,7 @@ type DetailsProps = {
 }
 
 function Details({ title }: DetailsProps) {
-  return <h1>{title}</h1>
+  return <div aria-label="Details">{title}</div>
 }
 
 export default Details

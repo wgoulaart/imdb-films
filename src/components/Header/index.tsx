@@ -3,7 +3,7 @@ type HeaderProps = {
 }
 
 function Header({ title }: HeaderProps) {
-  return <h1>{title}</h1>
+  return <header aria-label="Header">{title}</header>
 }
 
 export default Header

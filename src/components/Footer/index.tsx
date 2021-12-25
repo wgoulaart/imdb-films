@@ -3,7 +3,7 @@ type FooterProps = {
 }
 
 function Footer({ title }: FooterProps) {
-  return <h1>{title}</h1>
+  return <footer aria-label="Footer">{title}</footer>
 }
 
 export default Footer

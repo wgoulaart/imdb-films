@@ -3,10 +3,8 @@ import Header from '.'
 
 describe('<Header />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Header />)
+    render(<Header />)
 
-    expect(screen.getByRole('heading', { name: /Header/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByLabelText(/Header/i)).toBeInTheDocument()
   })
 })
