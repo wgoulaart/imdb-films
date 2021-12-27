@@ -15,14 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "strictNullChecks": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/pages/*": ["pages/*"],
-      "@/components/*": ["components/*"],
-      "@/context/*": ["context/*"],
-      "@/styles/*": ["styles/*"],
-      "@/utils/*": ["utils/*"]
-    }
+    "baseUrl": "./src"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
