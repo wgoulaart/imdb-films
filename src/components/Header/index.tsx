@@ -1,4 +1,4 @@
-import { Wrapper } from './styles'
+import { Wrapper, Container } from './styles'
 
 import Logo from 'components/Logo'
 import InputSearch from 'components/InputSearch'
@@ -6,8 +6,10 @@ import InputSearch from 'components/InputSearch'
 function Header() {
   return (
     <Wrapper>
-      <Logo />
-      <InputSearch />
+      <Container>
+        <Logo />
+        <InputSearch />
+      </Container>
     </Wrapper>
   )
 }

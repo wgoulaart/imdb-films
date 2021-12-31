@@ -17,11 +17,11 @@ export const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     height: 48px;
 
     svg {
       height: 48px;
     }
-  }
+  } */
 `
