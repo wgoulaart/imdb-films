@@ -2,11 +2,9 @@ import { render, screen } from '@testing-library/react'
 import Footer from '.'
 
 describe('<Footer />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Footer />)
+  it('should render the Footer', () => {
+    render(<Footer />)
 
-    expect(screen.getByRole('heading', { name: /Footer/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByLabelText(/Footer/i)).toBeInTheDocument()
   })
 })
