@@ -6,8 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --maxWorkers=50%",
+    "test": "jest ",
     "test:watch": "jest --watch --maxWorkers=25%",
+    "test:coverge": "jest --coverage --maxWorkers=50%",
     "test:ci": "jest --runInBand",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
