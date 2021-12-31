@@ -1,9 +1,15 @@
-type HeaderProps = {
-  title?: string
-}
+import { Wrapper } from './styles'
 
-function Header({ title }: HeaderProps) {
-  return <header aria-label="Header">{title}</header>
+import Logo from 'components/Logo'
+import InputSearch from 'components/InputSearch'
+
+function Header() {
+  return (
+    <Wrapper>
+      <Logo />
+      <InputSearch />
+    </Wrapper>
+  )
 }
 
 export default Header

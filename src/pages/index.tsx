@@ -1,9 +1,8 @@
 import type { NextPage } from 'next'
-
+import Header from '../components/Header'
 import Banner from '../components/Banner'
 import ListFilm from '../components/ListFilm'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +10,7 @@ const Home: NextPage = () => {
       <Header />
       <Banner title="Banner" />
       <ListFilm title="ListFilm" />
-      <Footer title="Footer" />
+      <Footer />
     </>
   )
 }
