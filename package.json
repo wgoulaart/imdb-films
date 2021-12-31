@@ -11,7 +11,8 @@
     "test:coverge": "jest --coverage --maxWorkers=50%",
     "test:ci": "jest --runInBand",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=fd4f1b94049b"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -40,6 +41,7 @@
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
+    "chromatic": "^6.3.3",
     "eslint": "8.5.0",
     "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
