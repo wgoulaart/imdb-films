@@ -1,14 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.header`
-  background: var(--color-dark);
-`
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  gap: var(--size-base);
-  padding: var(--size-base);
-
+export const Wrapper = styled.div`
   width: 100%;
   padding: var(--size-base);
 

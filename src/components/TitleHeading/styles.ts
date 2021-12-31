@@ -24,5 +24,5 @@ export const Wrapper = styled.h1<TitleHeadingProps>`
   ${(props) => props.size == 'medium' && medium};
   ${(props) => props.size == 'large' && large};
   ${(props) => props.size == 'xlarge' && xlarge};
-  margin-top: calc(var(--size-base) / 2);
+  margin-top: calc(var(--size-base) * 2);
 `
