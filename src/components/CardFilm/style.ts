@@ -39,12 +39,12 @@ export const Wrapper = styled.article`
   }
 
   @media (min-width: 1024px) {
-    width: calc((100% / 5) - 16px);
+    width: 193px;
   }
 
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
     width: calc((100% / 6) - 16px);
-  }
+  } */
 `
 
 export const Image = styled.figure`
@@ -61,7 +61,15 @@ export const Image = styled.figure`
     width: 100%;
     height: 150px;
     object-fit: cover;
+    object-position: top;
     z-index: 1;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
   }
 
   &::before {
