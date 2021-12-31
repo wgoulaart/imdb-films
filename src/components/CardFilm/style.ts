@@ -45,21 +45,6 @@ export const Wrapper = styled.article`
   @media (min-width: 1440px) {
     width: calc((100% / 6) - 16px);
   }
-
-  /* max-width: calc((100% / 2) - 8px); */
-
-  /*
-  @media (min-width: 460px) {
-    max-width: calc((100% / 3) - 16px);
-  }
-
-  @media (min-width: 720px) {
-    max-width: calc((100% / 4) - 16px);
-  }
-
-  @media (min-width: 1024px) {
-    max-width: calc((100% / 6) - 16px);
-  } */
 `
 
 export const Image = styled.figure`
