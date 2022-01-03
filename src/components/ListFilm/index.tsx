@@ -48,8 +48,6 @@ const settings: Settings = {
 }
 
 function ListFilm({ title, items }: ListFilmProps) {
-  console.log(`ItensApi::`, items)
-
   return (
     <>
       <TitleHeading size="large" title={title} />

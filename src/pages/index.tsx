@@ -10,10 +10,6 @@ import Container from 'components/Container'
 import API from 'service/api'
 
 const Home: NextPage = () => {
-  console.log(`getTitleDetails:`, API.getTitleDetails)
-  console.log(`getComingSoonMovies:`, API.getComingSoonMovies)
-  console.log(`getActorsList:`, API.getActorsList)
-
   return (
     <>
       <Header />
