@@ -1,5 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+import CardFilm from 'components/CardFilm'
 import { Settings } from 'react-slick'
+import { getTitleDetails } from 'service/api'
 import styled from 'styled-components'
 
 import Slider from '.'
@@ -10,7 +12,6 @@ export default {
 } as Meta
 
 const settings: Settings = {
-  dots: true,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1
@@ -36,21 +37,24 @@ export const Horizontal: Story = () => (
   </Slider>
 )
 
-const verticalSettings: Settings = {
-  vertical: true,
-  verticalSwiping: true,
-  dots: true,
-  infinite: false,
-  slidesToShow: 1
+const horizontalCardsSettings: Settings = {
+  speed: 500,
+  slidesToScroll: 1,
+  slidesToShow: 5
 }
 
-export const Vertical: Story = () => (
-  <Slider settings={verticalSettings}>
-    <Slide>1</Slide>
-    <Slide>2</Slide>
-    <Slide>3</Slide>
-    <Slide>4</Slide>
-    <Slide>5</Slide>
-    <Slide>6</Slide>
+export const HorizontalCards: Story = () => (
+  <Slider settings={horizontalCardsSettings}>
+    {getTitleDetails &&
+      getTitleDetails.map((film) => (
+        <CardFilm
+          key={film.id}
+          id={film.id}
+          title={film.title}
+          titleType={film.titleType}
+          year={film.year}
+          image={film.image}
+        />
+      ))}
   </Slider>
 )

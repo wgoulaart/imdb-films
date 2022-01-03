@@ -2,26 +2,26 @@ import { Wrapper, PhotoProfile, TitleActor, QtdFilms } from './styles'
 
 export type CardActorProps = {
   id?: string
-  name: string
-  image: {
-    id?: string
-    url: string
+  base: {
+    name: string
+    image: {
+      id?: string
+      url: string
+    }
   }
-  filmography: number
+  filmography: {
+    length: number
+  }
 }
 
-export default function CardActor({
-  name,
-  image,
-  filmography
-}: CardActorProps) {
+export default function CardActor({ base, filmography }: CardActorProps) {
   return (
     <Wrapper>
       <PhotoProfile>
-        <img src={image?.url} alt={name} />
+        <img src={base.image?.url} alt={base.name} />
       </PhotoProfile>
-      <TitleActor> {name}</TitleActor>
-      <QtdFilms> {filmography} </QtdFilms>
+      <TitleActor> {base.name}</TitleActor>
+      <QtdFilms> {filmography.length} </QtdFilms>
     </Wrapper>
   )
 }

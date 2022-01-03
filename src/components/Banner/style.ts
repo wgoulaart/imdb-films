@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
-  height: 800px;
-`
-
 export const BannerContainer = styled.div`
   display: block;
   position: relative;
@@ -12,14 +8,15 @@ export const BannerContainer = styled.div`
 
   img {
     width: 100%;
-    max-height: 800px;
+    height: auto;
+    aspect-ratio: 1/2;
   }
 `
 
 export const Description = styled.div`
   position: absolute;
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: var(--color-white);
   bottom: 0;
   width: 100%;
