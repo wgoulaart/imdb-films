@@ -32,19 +32,9 @@ export const Wrapper = styled.article`
   background: #050e12;
   border-radius: 4px;
 
-  width: calc((100% / 2) - 16px);
-
   @media (min-width: 640px) {
-    width: calc((100% / 4) - 16px);
+    width: calc(100% - 16px);
   }
-
-  @media (min-width: 1024px) {
-    width: 193px;
-  }
-
-  /* @media (min-width: 1440px) {
-    width: calc((100% / 6) - 16px);
-  } */
 `
 
 export const Image = styled.figure`
@@ -87,7 +77,7 @@ export const Image = styled.figure`
     background: linear-gradient(45deg, #666 0%, #666 15%, #666 10%);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 630px) {
     height: 290px;
 
     img {

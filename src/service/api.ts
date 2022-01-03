@@ -30,21 +30,164 @@ const getTitleComingSoonMovies = [
   { id: '/title/tt10023022/', releaseDate: '2022-01-28' },
   { id: '/title/tt5834426/', releaseDate: '2022-02-04' }
 ]
-
-const getTitleDetails = {
-  '@type': 'imdb.api.title.title',
-  id: '/title/tt13496236/',
-  image: {
-    height: 1024,
-    id: '/title/tt13496236/images/rm2774199297',
-    url: 'https://m.media-amazon.com/images/M/MV5BYjZkYTNhODktODVjYy00MTdiLWFhODEtOTFlMjg4MWIzNmE0XkEyXkFqcGdeQXVyMTMzMDU5MjY2._V1_.jpg',
-    width: 691
+const getComingSoonMovies = [
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt13496236/',
+    image: {
+      height: 1024,
+      id: '/title/tt13496236/images/rm2774199297',
+      url: 'https://m.media-amazon.com/images/M/MV5BYjZkYTNhODktODVjYy00MTdiLWFhODEtOTFlMjg4MWIzNmE0XkEyXkFqcGdeQXVyMTMzMDU5MjY2._V1_.jpg',
+      width: 691
+    },
+    runningTimeInMinutes: 100,
+    title: 'American Siege',
+    titleType: 'movie',
+    year: 2021
   },
-  title: 'American Siege',
-  titleType: 'movie',
-  year: 2021
-}
-
+  {
+    '@type': 'imdb.api.title.title',
+    disambiguation: 'I',
+    id: '/title/tt11245972/',
+    image: {
+      height: 3000,
+      id: '/title/tt11245972/images/rm3414551553',
+      url: 'https://m.media-amazon.com/images/M/MV5BM2E4ZGFmZTgtMDVkYS00ZTk0LWIzYWMtODk5OGVmYmEyMzEzXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
+      width: 1918
+    },
+    runningTimeInMinutes: 114,
+    title: 'Scream',
+    titleType: 'movie',
+    year: 2022
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt8356942/',
+    image: {
+      height: 5000,
+      id: '/title/tt8356942/images/rm1754265345',
+      url: 'https://m.media-amazon.com/images/M/MV5BNzk4MDZhNTctMDA3OC00ODdkLWIyOWYtN2M0MzA3MDY5NDk1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+      width: 3158
+    },
+    runningTimeInMinutes: 124,
+    title: 'The 355',
+    titleType: 'movie',
+    year: 2022
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt11777738/',
+    image: {
+      height: 2880,
+      id: '/title/tt11777738/images/rm31585537',
+      url: 'https://m.media-amazon.com/images/M/MV5BMmRlNzkyYzUtYzE5Yi00YmZkLTgyYjQtMmFjMjhmNDU1OTJiXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg',
+      width: 1944
+    },
+    runningTimeInMinutes: 127,
+    title: 'A Hero',
+    titleType: 'movie',
+    year: 2021
+  }
+]
+const getMostPopularMovies = [
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt11286314/',
+    image: {
+      height: 1500,
+      id: '/title/tt11286314/images/rm1107028225',
+      url: 'https://m.media-amazon.com/images/M/MV5BNjZjNDE1NTYtYTgwZS00M2VmLWEyODktM2FlNjhiYTk3OGU2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg',
+      width: 844
+    },
+    runningTimeInMinutes: 138,
+    title: "Don't Look Up",
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt10838180/',
+    image: {
+      height: 4096,
+      id: '/title/tt10838180/images/rm3704744193',
+      url: 'https://m.media-amazon.com/images/M/MV5BMGJkNDJlZWUtOGM1Ny00YjNkLThiM2QtY2ZjMzQxMTIxNWNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg',
+      width: 2764
+    },
+    runningTimeInMinutes: 148,
+    title: 'The Matrix Resurrections',
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt10872600/',
+    image: {
+      height: 4000,
+      id: '/title/tt10872600/images/rm3936939521',
+      url: 'https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg',
+      width: 2699
+    },
+    runningTimeInMinutes: 148,
+    title: 'Spider-Man: No Way Home',
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt2953050/',
+    image: {
+      height: 3000,
+      id: '/title/tt2953050/images/rm2541025281',
+      url: 'https://m.media-amazon.com/images/M/MV5BNjE5NzA4ZDctOTJkZi00NzM0LTkwOTYtMDI4MmNkMzIxODhkXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg',
+      width: 2025
+    },
+    runningTimeInMinutes: 102,
+    title: 'Encanto',
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt10293406/',
+    image: {
+      height: 1500,
+      id: '/title/tt10293406/images/rm2236541697',
+      url: 'https://m.media-amazon.com/images/M/MV5BZGRhYjE2NWUtN2FkNy00NGI3LTkxYWMtMDk4Yjg5ZjI3MWI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg',
+      width: 1013
+    },
+    runningTimeInMinutes: 126,
+    title: 'The Power of the Dog',
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt11271038/',
+    image: {
+      height: 1016,
+      id: '/title/tt11271038/images/rm822209281',
+      url: 'https://m.media-amazon.com/images/M/MV5BZTgxMWJkMzItMzg1YS00NDJiLTljYjctMTc2YzQzZDZjZDAyXkEyXkFqcGdeQXVyODQ2OTIzNDU@._V1_.jpg',
+      width: 640
+    },
+    runningTimeInMinutes: 133,
+    title: 'Licorice Pizza',
+    titleType: 'movie',
+    year: 2021
+  },
+  {
+    '@type': 'imdb.api.title.title',
+    id: '/title/tt1877830/',
+    image: {
+      height: 1500,
+      id: '/title/tt1877830/images/rm3887592449',
+      url: 'https://m.media-amazon.com/images/M/MV5BYTExZTdhY2ItNGQ1YS00NjJlLWIxMjYtZTI1MzNlMzY0OTk4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg',
+      width: 1012
+    },
+    title: 'The Batman',
+    titleType: 'movie',
+    year: 2022
+  }
+]
 const getActorsListMostPopularCelebs = [
   'nm8463347/',
   'nm2794962/',
@@ -131,8 +274,7 @@ const getBioActors = {
     }
   ]
 }
-
-export const getActorsList = [
+const getActorsList = [
   {
     id: 'nm8463347',
     base: {
@@ -21534,6 +21676,431 @@ export const getActorsList = [
     ]
   }
 ]
+const getFilmsBanner = [
+  {
+    title: {
+      '@type': 'imdb.api.title.title',
+      id: '/title/tt9770150/',
+      image: {
+        height: 2000,
+        id: '/title/tt9770150/images/rm1750783233',
+        url: 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+        width: 1334
+      },
+      runningTimeInMinutes: 107,
+      title: 'Nomadland',
+      titleType: 'movie',
+      year: 2020
+    },
+    ratings: {
+      '@type': 'imdb.api.title.ratings',
+      id: '/title/tt9770150/',
+      title: 'Nomadland',
+      titleType: 'movie',
+      year: 2020,
+      bottomRank: 7055,
+      canRate: true,
+      rating: 7.4,
+      ratingCount: 138938,
+      topRank: 1488
+    },
+    metacritic: {
+      '@type': 'imdb.api.title.metacritic',
+      id: '/title/tt9770150/',
+      metaScore: 93,
+      metacriticUrl:
+        'https://www.metacritic.com/movie/nomadland?ftag=MCD-06-10aaa1c',
+      reviewCount: 54,
+      userRatingCount: 299,
+      userScore: 7.3
+    },
+    releaseDate: '2021-04-19',
+    popularity: {
+      '@type': 'imdb.api.title.rank',
+      currentRank: 845,
+      id: '/title/tt9770150/',
+      image: {
+        height: 2000,
+        id: '/title/tt9770150/images/rm1750783233',
+        url: 'https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+        width: 1334
+      },
+      title: 'Nomadland',
+      titleType: 'movie',
+      year: 2020
+    },
+    waysToWatch: {
+      '@type': 'imdb.api.watch.watchoptions',
+      id: '/title/tt9770150/',
+      optionGroups: [
+        {
+          displayName: 'WATCH NOW',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'http://www.hulu.com/watch/1000162010?d=Amazon'
+              },
+              primaryText: 'Hulu',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.hulu',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.svod',
+                refPart: 'hulu'
+              },
+              secondaryText: 'on Hulu.com and the Hulu app'
+            }
+          ]
+        },
+        {
+          displayName: 'RENT/BUY',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.amazon.com/gp/video/detail/amzn1.dv.gti.46bc122b-adf0-92ef-1de1-0da92e173c71'
+              },
+              primaryText: 'Prime Video',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.prime_video',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.tvod',
+                refPart: 'pvt_aiv'
+              },
+              secondaryText: 'rent/buy from $3.99'
+            }
+          ]
+        }
+      ]
+    },
+    genres: ['Drama'],
+    certificate: 'M/12'
+  },
+  {
+    title: {
+      '@type': 'imdb.api.title.title',
+      id: '/title/tt6751668/',
+      image: {
+        height: 3556,
+        id: '/title/tt6751668/images/rm3194916865',
+        url: 'https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
+        width: 2400
+      },
+      runningTimeInMinutes: 132,
+      title: 'Parasite',
+      titleType: 'movie',
+      year: 2019
+    },
+    ratings: {
+      '@type': 'imdb.api.title.ratings',
+      id: '/title/tt6751668/',
+      title: 'Parasite',
+      titleType: 'movie',
+      year: 2019,
+      bottomRank: 9252,
+      canRate: true,
+      rating: 8.6,
+      ratingCount: 699137,
+      topRank: 31
+    },
+    metacritic: {
+      '@type': 'imdb.api.title.metacritic',
+      id: '/title/tt6751668/',
+      metaScore: 96,
+      metacriticUrl:
+        'https://www.metacritic.com/movie/parasite?ftag=MCD-06-10aaa1c',
+      reviewCount: 52,
+      userRatingCount: 1640,
+      userScore: 8.9
+    },
+    releaseDate: '2019-09-26',
+    popularity: {
+      '@type': 'imdb.api.title.rank',
+      currentRank: 352,
+      id: '/title/tt6751668/',
+      image: {
+        height: 3556,
+        id: '/title/tt6751668/images/rm3194916865',
+        url: 'https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
+        width: 2400
+      },
+      title: 'Parasite',
+      titleType: 'movie',
+      year: 2019
+    },
+    waysToWatch: {
+      '@type': 'imdb.api.watch.watchoptions',
+      id: '/title/tt6751668/',
+      optionGroups: [
+        {
+          displayName: 'WATCH NOW',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'http://www.hulu.com/watch/1639550?d=Amazon'
+              },
+              primaryText: 'Hulu',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.hulu',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.svod',
+                refPart: 'hulu'
+              },
+              secondaryText: 'on Hulu.com and the Hulu app'
+            }
+          ]
+        },
+        {
+          displayName: 'RENT/BUY',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.amazon.com/dp/B08CW9LXD8'
+              },
+              primaryText: 'Amazon',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.amazon',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.physical',
+                refPart: 'amazon'
+              },
+              secondaryText: 'buy on Blu-ray, DVD from $14.99'
+            }
+          ]
+        }
+      ]
+    },
+    genres: ['Comedy', 'Drama', 'Thriller'],
+    certificate: 'M/14'
+  },
+  {
+    title: {
+      '@type': 'imdb.api.title.title',
+      id: '/title/tt6966692/',
+      image: {
+        height: 1500,
+        id: '/title/tt6966692/images/rm2461296640',
+        url: 'https://m.media-amazon.com/images/M/MV5BYzIzYmJlYTYtNGNiYy00N2EwLTk4ZjItMGYyZTJiOTVkM2RlXkEyXkFqcGdeQXVyODY1NDk1NjE@._V1_.jpg',
+        width: 1000
+      },
+      runningTimeInMinutes: 130,
+      title: 'Green Book',
+      titleType: 'movie',
+      year: 2018
+    },
+    ratings: {
+      '@type': 'imdb.api.title.ratings',
+      id: '/title/tt6966692/',
+      title: 'Green Book',
+      titleType: 'movie',
+      year: 2018,
+      bottomRank: 9108,
+      canRate: true,
+      rating: 8.2,
+      ratingCount: 441677,
+      topRank: 131
+    },
+    metacritic: {
+      '@type': 'imdb.api.title.metacritic',
+      id: '/title/tt6966692/',
+      metaScore: 69,
+      metacriticUrl:
+        'https://www.metacritic.com/movie/green-book?ftag=MCD-06-10aaa1c',
+      reviewCount: 52,
+      userRatingCount: 573,
+      userScore: 8
+    },
+    releaseDate: '2019-01-24',
+    popularity: {
+      '@type': 'imdb.api.title.rank',
+      currentRank: 734,
+      id: '/title/tt6966692/',
+      image: {
+        height: 1500,
+        id: '/title/tt6966692/images/rm2461296640',
+        url: 'https://m.media-amazon.com/images/M/MV5BYzIzYmJlYTYtNGNiYy00N2EwLTk4ZjItMGYyZTJiOTVkM2RlXkEyXkFqcGdeQXVyODY1NDk1NjE@._V1_.jpg',
+        width: 1000
+      },
+      title: 'Green Book',
+      titleType: 'movie',
+      year: 2018
+    },
+    waysToWatch: {
+      '@type': 'imdb.api.watch.watchoptions',
+      id: '/title/tt6966692/',
+      optionGroups: [
+        {
+          displayName: 'ON TV',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: '/title/tt6966692/tvschedule/'
+              },
+              primaryText: 'See TV Listings',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.imdb.tvlistings',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.tv',
+                refPart: 'tvl'
+              }
+            }
+          ]
+        },
+        {
+          displayName: 'RENT/BUY',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.amazon.com/gp/video/detail/amzn1.dv.gti.66b38541-76e5-ada4-6294-f63d00f23ce1'
+              },
+              primaryText: 'Prime Video',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.prime_video',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.tvod',
+                refPart: 'pvt_aiv'
+              },
+              secondaryText: 'rent/buy from $3.99'
+            }
+          ]
+        }
+      ]
+    },
+    genres: ['Biography', 'Comedy', 'Drama', 'Music'],
+    certificate: 'M/12'
+  },
+  {
+    title: {
+      '@type': 'imdb.api.title.title',
+      id: '/title/tt5580390/',
+      image: {
+        height: 2048,
+        id: '/title/tt5580390/images/rm4236598016',
+        url: 'https://m.media-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg',
+        width: 1382
+      },
+      runningTimeInMinutes: 123,
+      title: 'The Shape of Water',
+      titleType: 'movie',
+      year: 2017
+    },
+    ratings: {
+      '@type': 'imdb.api.title.ratings',
+      id: '/title/tt5580390/',
+      title: 'The Shape of Water',
+      titleType: 'movie',
+      year: 2017,
+      bottomRank: 6762,
+      canRate: true,
+      rating: 7.3,
+      ratingCount: 399769,
+      topRank: 1664
+    },
+    metacritic: {
+      '@type': 'imdb.api.title.metacritic',
+      id: '/title/tt5580390/',
+      metaScore: 87,
+      metacriticUrl:
+        'https://www.metacritic.com/movie/the-shape-of-water?ftag=MCD-06-10aaa1c',
+      reviewCount: 53,
+      userRatingCount: 1042,
+      userScore: 7
+    },
+    releaseDate: '2018-02-01',
+    popularity: {
+      '@type': 'imdb.api.title.rank',
+      currentRank: 798,
+      id: '/title/tt5580390/',
+      image: {
+        height: 2048,
+        id: '/title/tt5580390/images/rm4236598016',
+        url: 'https://m.media-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg',
+        width: 1382
+      },
+      title: 'The Shape of Water',
+      titleType: 'movie',
+      year: 2017
+    },
+    waysToWatch: {
+      '@type': 'imdb.api.watch.watchoptions',
+      id: '/title/tt5580390/',
+      optionGroups: [
+        {
+          displayName: 'WATCH NOW',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://abc.com/'
+              },
+              primaryText: 'ABC',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.abc',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.svod',
+                refPart: 'abc'
+              },
+              secondaryText: 'Go to abc.com'
+            },
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.fxnetworks.com/fxnow'
+              },
+              primaryText: 'FXNOW',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.fx_now',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.svod',
+                refPart: 'fx_now'
+              },
+              secondaryText: 'Go to fxnetworks.com'
+            }
+          ]
+        },
+        {
+          displayName: 'RENT/BUY',
+          watchOptions: [
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.amazon.com/dp/B07895V83N'
+              },
+              primaryText: 'Amazon',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.amazon',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.physical',
+                refPart: 'amazon'
+              },
+              secondaryText: 'buy on Blu-ray from $8.99'
+            },
+            {
+              link: {
+                platform: 'amzn1.imdb.w2w.platform.web',
+                uri: 'https://www.amazon.com/gp/video/detail/amzn1.dv.gti.06ba17d7-48ea-9935-1d9c-e689fdcc78ac'
+              },
+              primaryText: 'Prime Video',
+              provider: {
+                providerId: 'amzn1.imdb.w2w.provider.prime_video',
+                providerTypeId: 'amzn1.imdb.w2w.provider-type.tvod',
+                refPart: 'pvt_aiv'
+              },
+              secondaryText: 'rent/buy from $3.99'
+            }
+          ]
+        }
+      ]
+    },
+    genres: ['Drama', 'Fantasy', 'Romance', 'Sci-Fi', 'Thriller'],
+    certificate: 'M/16'
+  }
+]
+
+export default {
+  getTitleComingSoonMovies,
+  getComingSoonMovies,
+  getMostPopularMovies,
+  getActorsListMostPopularCelebs,
+  getBioActors,
+  getActorsList,
+  getFilmsBanner
+}
 // axios
 //   .request(options)
 //   .then(function (response) {

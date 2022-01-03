@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react'
+import API from 'service/api'
 import ListFilm from '.'
 
 export default {
@@ -6,8 +7,11 @@ export default {
   component: ListFilm
 } as Meta
 
-export const Default: Story = (args) => <ListFilm {...args} />
+export const Default: Story = (args) => (
+  <ListFilm items={API.getMostPopularMovies} {...args} />
+)
 
 Default.args = {
-  title: 'Filmes populares'
+  title: 'Filmes populares',
+  items: API.getMostPopularMovies
 }

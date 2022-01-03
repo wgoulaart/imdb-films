@@ -39,6 +39,7 @@ const GlobalStyles = createGlobalStyle`
     --bg-app: #191B1F;
     --color-dark: #1F1F1F;
     --color-white: #ffffff;
+    --color-dot-active:##FFB800;
     --font-base: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     --size-small: 14px;

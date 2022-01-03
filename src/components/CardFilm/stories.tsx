@@ -6,7 +6,11 @@ export default {
   component: CardFilm
 } as Meta
 
-export const Default: Story<CardFilmProps> = (args) => <CardFilm {...args} />
+export const Default: Story<CardFilmProps> = (args) => (
+  <div style={{ maxWidth: 320 }}>
+    <CardFilm {...args} />
+  </div>
+)
 
 Default.args = {
   id: '/title/tt13496236/',
