@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import ListFilm from '../components/ListFilm'
@@ -10,8 +11,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
+      <Banner />
       <Container>
-        <Banner title="Banner" />
         <ListFilm title="Filmes populares" />
         <ListFilm title="Próximos lançamentos" />
         <ListActor title="Atores populares" />

@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react'
 import Banner from '.'
 
 export default {
-  title: 'Banner',
+  title: 'Components/Banner',
   component: Banner
 } as Meta
 
