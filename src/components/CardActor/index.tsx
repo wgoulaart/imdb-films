@@ -21,7 +21,7 @@ export default function CardActor({ base, filmography }: CardActorProps) {
         <img src={base.image?.url} alt={base.name} />
       </PhotoProfile>
       <TitleActor> {base.name}</TitleActor>
-      <QtdFilms> {filmography.length} </QtdFilms>
+      <QtdFilms> {filmography?.length} </QtdFilms>
     </Wrapper>
   )
 }

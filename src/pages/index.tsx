@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <Header />
       <Banner />
       <Container>
-        <ListFilm title="Filmes populares" items={API.getTitleDetails} />
+        <ListFilm title="Filmes populares" items={API.getMostPopularMovies} />
 
         <ListFilm
           title="Próximos lançamentos"

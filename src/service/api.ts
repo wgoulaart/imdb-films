@@ -22095,7 +22095,7 @@ const getFilmsBanner = [
 export default {
   getTitleComingSoonMovies,
   getComingSoonMovies,
-  getTitleDetails: getMostPopularMovies,
+  getMostPopularMovies,
   getActorsListMostPopularCelebs,
   getBioActors,
   getActorsList,

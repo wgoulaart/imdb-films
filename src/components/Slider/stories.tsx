@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import CardFilm from 'components/CardFilm'
 import { Settings } from 'react-slick'
-import { getTitleDetails } from 'service/api'
+import API from 'service/api'
 import styled from 'styled-components'
 
 import Slider from '.'
@@ -14,19 +14,21 @@ export default {
 const settings: Settings = {
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  infinite: false
 }
 
 const Slide = styled.div`
-  background: gray;
+  background: rgba(255, 255, 255, 0.2);
   width: 30rem;
   padding: 10rem 0;
-  border: 0.1rem solid red;
-  color: white;
+  color: #ffb800;
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
 `
 
-export const Horizontal: Story = () => (
+export const Banner: Story = () => (
   <Slider settings={settings}>
     <Slide>1</Slide>
     <Slide>2</Slide>
@@ -40,13 +42,14 @@ export const Horizontal: Story = () => (
 const horizontalCardsSettings: Settings = {
   speed: 500,
   slidesToScroll: 1,
-  slidesToShow: 5
+  slidesToShow: 4,
+  infinite: false
 }
 
-export const HorizontalCards: Story = () => (
+export const Cards: Story = () => (
   <Slider settings={horizontalCardsSettings}>
-    {getTitleDetails &&
-      getTitleDetails.map((film) => (
+    {API.getMostPopularMovies &&
+      API.getMostPopularMovies.map((film) => (
         <CardFilm
           key={film.id}
           id={film.id}
