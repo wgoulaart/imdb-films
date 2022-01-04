@@ -47,7 +47,7 @@ Aplicação publicada: [Link da aplicação](https://imdb-films.vercel.app/)
 
 ### Storybook
 
-Componentes da aplicação publicados: [Components Storybook](https://61cf7e7eb8376b003ab89d0a-zsxqptumgc.chromatic.com/?path=/story/components-listfilm--default)
+Componentes da aplicação publicados: [Components Storybook](https://61cf7e7eb8376b003ab89d0a-kzzyrlzbum.chromatic.com/?path=/story/components-actordetail--default)
 
 #### License
 
