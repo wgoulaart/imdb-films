@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import CardFilm from 'components/CardFilm'
+import { getMostPopularMovies } from 'components/ListFilm/stories'
 import { Settings } from 'react-slick'
-import API from 'service/api'
 import styled from 'styled-components'
 
 import Slider from '.'
@@ -42,14 +42,44 @@ export const Banner: Story = () => (
 const horizontalCardsSettings: Settings = {
   speed: 500,
   slidesToScroll: 1,
-  slidesToShow: 4,
-  infinite: false
+  slidesToShow: 5,
+  infinite: false,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true
+      }
+    },
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true
+      }
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
 }
 
 export const Cards: Story = () => (
   <Slider settings={horizontalCardsSettings}>
-    {API.getMostPopularMovies &&
-      API.getMostPopularMovies.map((film) => (
+    {getMostPopularMovies &&
+      getMostPopularMovies.map((film) => (
         <CardFilm
           key={film.id}
           id={film.id}

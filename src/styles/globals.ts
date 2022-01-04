@@ -36,16 +36,23 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --bg-app: #191B1F;
-    --color-dark: #1F1F1F;
-    --color-white: #ffffff;
-    --color-dot-active:##FFB800;
     --font-base: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --size-tiny: 8px;
     --size-small: 14px;
     --size-base: 16px;
     --size-large: 36px;
     --size-xlarge: 48px;
+    --bg-app: #191B1F;
+    --color-dark: #1F1F1F;
+    --color-white: #ffffff;
+    --color-imdb: #FFB800;
+  }
+
+
+  #__next {
+    display: flex;
+    flex-direction: column;
   }
 `
 export default GlobalStyles

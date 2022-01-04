@@ -1,9 +1,10 @@
 import CardFilm, { CardFilmProps } from 'components/CardFilm'
 import Slider from 'components/Slider'
 import TitleHeading from 'components/TitleHeading'
+import Link from 'next/link'
 import { Settings } from 'react-slick'
 
-import { Wrapper } from './style'
+import { StyledLink, Wrapper } from './style'
 
 type ListFilmProps = {
   title?: string
@@ -48,20 +49,31 @@ const settings: Settings = {
 }
 
 function ListFilm({ title, items }: ListFilmProps) {
+  console.log(`listFilm`, items)
   return (
     <>
       <TitleHeading size="large" title={title} />
       <Wrapper aria-label="ListFilm">
         <Slider settings={settings}>
           {items?.map((film) => (
-            <CardFilm
+            <Link
+              href={{
+                pathname: '/movie-detail',
+                query: { id: film.id }
+              }}
+              passHref
               key={film.id}
-              id={film.id}
-              title={film.title}
-              titleType={film.titleType}
-              year={film.year}
-              image={film.image}
-            />
+            >
+              <StyledLink>
+                <CardFilm
+                  id={film.id}
+                  title={film.title}
+                  titleType={film.titleType}
+                  year={film.year}
+                  image={film.image}
+                />
+              </StyledLink>
+            </Link>
           ))}
         </Slider>
       </Wrapper>
