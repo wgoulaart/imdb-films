@@ -6,3 +6,5 @@ export const Wrapper = styled.section`
   gap: var(--size-base);
   margin-top: var(--size-base);
 `
+
+export const StyledLink = styled.a``

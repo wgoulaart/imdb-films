@@ -1,16 +1,15 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
-import Logo from '.'
+import Rating, { RatingProps } from '.'
 
 export default {
-  title: 'Components/Logo',
-  component: Logo
+  title: 'Components/Rating',
+  component: Rating
 } as Meta
 
-export const Default: Story = (args) => <Logo {...args} />
+export const Default: Story<RatingProps> = (args) => <Rating {...args} />
 
 Default.args = {
-  color: 'white',
-  size: 'large'
+  rating: 8.8
 }

@@ -7,5 +7,5 @@ export const Wrapper = styled.footer`
   color: var(--color-white);
   padding: var(--size-base);
   gap: calc(var(--size-base) / 2);
-  margin-top: calc(var(--size-base) * 2);
+  margin-top: auto;
 `
