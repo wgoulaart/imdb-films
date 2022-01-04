@@ -17,7 +17,7 @@ export default function CardFilm({ id, title, year, image }: CardFilmProps) {
   return (
     <Wrapper key={id}>
       <Image>
-        <img src={image.url} alt={title} />
+        <img src={image?.url} alt={title} />
       </Image>
       <Description>
         <Title>{title}</Title>
