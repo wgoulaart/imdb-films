@@ -1,9 +1,18 @@
+import ActorDetail from 'components/ActorDetail'
+import MovieDetail from 'components/MovieDetail'
+import { IMovieData } from 'types/movie'
+
 type DetailsProps = {
-  title?: string
+  data: IMovieData
+  isMovie: boolean
 }
 
-function Details({ title }: DetailsProps) {
-  return <div aria-label="Details">{title}</div>
+function Details({ data, isMovie }: DetailsProps) {
+  console.log(`Details`, data)
+
+  return (
+    <>{isMovie ? <MovieDetail data={data} /> : <ActorDetail data={data} />}</>
+  )
 }
 
 export default Details
